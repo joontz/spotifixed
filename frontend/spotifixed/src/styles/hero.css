@@ -1,0 +1,91 @@
+.hero-container {
+  width: 33.333333%; /* Default width for larger screens */
+  position: absolute;
+  right: 0;
+  padding-right: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  /* Ensure the container stays within bounds on mobile */
+}
+
+.hero-content {
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.hero-accent {
+  position: absolute;
+  left: 0;
+  width: 16rem; /* Default width for larger screens */
+  height: 0.5rem;
+  background-color: #78B3CE;
+  border-radius: 9999px;
+}
+
+.top-accent {
+  top: -1rem;
+}
+
+.bottom-accent {
+  bottom: -1rem;
+  z-index: 1;  /* Ensure it's above other elements if needed */
+}
+
+.hero-title {
+  font-size: 2.6rem; /* Default font size for larger screens */
+  line-height: 1.2;
+  font-weight: 700;
+  color: #FBF8EF;
+  margin-top: 1.5rem;
+}
+
+.hero-highlight {
+  color: #F96E2A;
+}
+
+/* Media Queries for responsiveness */
+
+/* For tablets and above (min-width: 768px) */
+@media (min-width: 768px) {
+  .hero-container {
+    width: 33.333333%; /* Keep the width at 33% for medium and large screens */
+    padding-right: 3rem; /* Keep the padding as it is for larger screens */
+  }
+
+  .hero-title {
+    font-size: 4rem; /* Increase font size for larger screens */
+  }
+
+  .hero-accent {
+    width: 16rem; /* Default accent width for large screens */
+  }
+}
+
+/* For mobile screens and smaller devices (max-width: 767px) */
+@media (max-width: 767px) {
+  .hero-container {
+    width: 100%; /* Take full width on smaller screens */
+    padding-right: 1.5rem; /* Adjust padding for better fit */
+    padding-left: 1.5rem;  /* Add some left padding for mobile */
+    padding-top: 2rem;     /* Reduce top padding for smaller screens */
+    padding-bottom: 2rem;  /* Reduce bottom padding for smaller screens */
+    position: relative; /* Change positioning to make sure it’s contained */
+  }
+
+  .hero-title {
+    font-size: 2rem; /* Decrease font size on mobile for better fit */
+    margin-top: 1rem; /* Adjust margin for mobile */
+  }
+
+  .hero-accent {
+    width: 10rem; /* Reduce width of the accent on mobile */
+  }
+
+  .top-accent {
+    top: -0.5rem; /* Slightly adjust the top accent position on mobile */
+  }
+
+  .bottom-accent {
+    bottom: -0.5rem; /* Slightly adjust the bottom accent position on mobile */
+  }
+}

@@ -2,7 +2,7 @@
 
 body, html {
     margin: 0;
-    padding: 0;
+    padding: 10;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -16,15 +16,28 @@ body, html {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100%;
-}
+    flex-direction: column;
+  }
 
-.input-form {
+  .input-wrapper {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    width: 100%;
+  }
+
+  .input-button-group {
+    display: flex;
     gap: 10px;
-}
+    margin-bottom: 8px;  /* Adds space between input/button and error message */
+  }
+
+  .input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 
 .input-field {
     padding: 12px 20px;
@@ -33,10 +46,13 @@ body, html {
     border-radius: 25px;
     width: 300px;
     transition: all 0.3s ease;
+    background-color: #FBF8EF;
+    color: #9CA3AF;
+
 }
 
 .input-field:focus {
-    border-color: #C96868;
+    border-color: #EED3B1;
     outline: none;
 }
 
@@ -47,7 +63,7 @@ body, html {
 .submit-button {
     padding: 12px 20px;
     font-size: 16px;
-    background-color: #C96868;
+    background-color: #78B3CE;
     color: white;
     border: none;
     border-radius: 25px;
@@ -57,16 +73,17 @@ body, html {
     position: relative;
     transform: translateY(0);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-left: 12px;
 }
 
 .submit-button:hover {
-    background-color: #C96868;
+    background-color: #78B3CE;
     transform: translateY(-1px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .submit-button:active {
-    background-color: #C96868;
+    background-color: #78B3CE;
     transform: translateY(1px);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
@@ -89,4 +106,6 @@ body, html {
 .submit-button:active {
     animation: none;
 }
+
+
   

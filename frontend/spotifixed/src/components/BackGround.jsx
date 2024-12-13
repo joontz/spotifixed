@@ -35,6 +35,7 @@ const BackGround = ({ artworks, children }) => {
       overflow: 'hidden',
       position: 'relative'
     }}>
+      
       {background.image ? (
         <>
           <img
